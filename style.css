@@ -1,0 +1,145 @@
+body {
+    background-image: url(assets/images/woodBackground.jpg);
+}
+
+label {
+    font-size: large;
+    margin: 5px;
+}
+
+input {
+    border-radius: 5px;
+}
+textarea {
+    border-radius: 5px;
+}
+#taskDescriptionBox {
+    width: 30vw;
+}
+
+form button,
+#deleteAll {
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    font-family: "Witcher";
+}
+
+.buttonContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#deleteAll {
+    display: flex;
+    background-color: maroon;
+    color: antiquewhite;
+    border: firebrick 2px solid;
+}
+
+#deleteAll:hover {
+    transform: scale(1.1);
+    background-color: firebrick;
+}
+
+form button {
+    background-color: forestgreen;
+    border: yellowgreen 2px solid;
+
+}
+
+form button:hover {
+    transform: scale(1.1);
+    background-color: yellowgreen;
+}
+
+#cardDiv,
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    flex-direction: column;
+}
+
+.card {
+    background-image: url(assets/images/sticky-notes.png);
+    background-color: transparent;
+    background-size: cover;
+    font-family: "Witcher";
+    display: inline-flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: center;
+    max-width: 250px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 0;
+}
+
+.card:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.card #taskDescription {
+    margin-top: 18px;
+    font-size: larger;
+    text-wrap-mode: wrap;
+}
+
+.card span {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#removeButton:hover {
+    background-color: firebrick;
+}
+
+.card button {
+    background-color: transparent;
+    aspect-ratio: 1;
+    border: transparent;
+    border-radius: 10px;
+    align-self: end;
+    transition: 0.3s;
+}
+
+.card button img {
+    aspect-ratio: 1;
+    width: 15px;
+}
+.card button img:hover {
+    background-color: gray;
+    border: transparent;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+h1,
+label {
+    font-family: 'Wreckout';
+    color: black;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Wreckout';
+    src: url(assets/fonts/Wreckout.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Witcher';
+    src: url(assets/fonts/WitcherHandwritingRegular-GO5vO.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
