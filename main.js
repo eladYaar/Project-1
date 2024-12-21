@@ -5,7 +5,7 @@ const completeByDateBox = document.getElementById("completeByDateBox");
 const completeByTimeBox = document.getElementById("completeByTimeBox");
 const cardDiv = document.getElementById("cardDiv");
 
-const taskList = loadData("TaskList") ? loadData("TaskList") : [];
+const taskList = loadData("taskList") ? loadData("taskList") : [];
 let nextId = loadData("nextId") ? loadData("nextId") : 1;
 showCard();
 
@@ -19,7 +19,7 @@ function saveTask() {
 function saveData() {
     const jsonTaskList = JSON.stringify(taskList);
     const jsonId = JSON.stringify(nextId);
-    localStorage.setItem("TaskList", jsonTaskList);
+    localStorage.setItem("taskList", jsonTaskList);
     localStorage.setItem("nextId", jsonId);
 }
 
